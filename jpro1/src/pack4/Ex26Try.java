@@ -11,6 +11,14 @@ public class Ex26Try {
 	
 	public void testMethod() {
 		System.out.println("testMethod");
+		try {
+			int a[] = {1,2,3,};
+			System.out.println("배열 요소 값 출력 :"+ a[0]);
+			System.out.println("배열 요소 값 출력 :"+ a[3]);
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("testMetho 오류"+ e);
+		}
 	}
 	public static void main(String[] args) {  //Unhandled exception 오류는 예외처리해
 	//public static void main(String[] args) throws Exception{  //Unhandled exception 오류는 예외처리해
@@ -23,11 +31,21 @@ public class Ex26Try {
 			Ex26Try try1= new Ex26Try();
 			try1.testMethod();
 			
+			int re = 10 / 2;
+			System.out.println("re :"+re);
+			
 		} catch (FileNotFoundException e1) {       //throw Exception 안쓸경우 try catch를 사용한다
 			System.out.println("해당 파일이 없어요");
 		}catch (NullPointerException e2) {
 			//e2.printStackTrace();
 			System.out.println("객체 변수에러 원인"+e2);
+		}catch (ArrayIndexOutOfBoundsException e3) {
+			
+			System.out.println("배열 처리중 에러 :"+e3);
+		}catch (Exception e) {                          //Exception을 써주면 모든 오류를 안써두됨
+			System.out.println("연산 오류"+e);
+		}finally {
+			System.out.println("에러와 상관없이 반드시 출력");
 		}
 		
 		System.out.println("프로그램 종료");
