@@ -1,10 +1,9 @@
 package pack4;
 
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
+
+
+
 public class Ex31StudDto {
 	
 	
@@ -18,6 +17,24 @@ public class Ex31StudDto {
 		this.en=en;
 		this.irum=irum;
 	
+	}
+	public int getGuk() {
+		return guk;
+	}
+	public void setGuk(int guk) {
+		this.guk = guk;
+	}
+	public int getEn() {
+		return en;
+	}
+	public void setEn(int en) {
+		this.en = en;
+	}
+	public String getIrum() {
+		return irum;
+	}
+	public void setIrum(String irum) {
+		this.irum = irum;
 	}
 	
 	
