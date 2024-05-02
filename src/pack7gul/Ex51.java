@@ -200,8 +200,7 @@ public class Ex51 extends JFrame implements ActionListener {
 			txt3.setText("");
 			txt4.setText("");
 			lblphto.setIcon(null);
-			
-			
+
 			lblResult1.setText("총점: ");
 			lblResult2.setText("평균 ");
 			lblResult3.setText("평가: ");
